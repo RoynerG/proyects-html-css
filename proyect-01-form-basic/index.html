@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyect 01 - Form</title>
+  </head>
+  <body>
+    <h1 id="title" class="tittle">Encuentra tu propiedad</h1>
+    <p id="description" class="description">
+      Completa toda la informacion para poder encontrar el inmueble de tus
+      sueños.
+    </p>
+    <form action="#" method="post" id="survey-form">
+      <fieldset class="caja">
+        <label for="name" class="block">Nombre </label>
+        <input type="text" name="name" id="name" class="block" />
+        <label for="email" class="block">Correo </label>
+        <input type="email" name="email" id="email" class="block" />
+        <label for="" class="block">Precio </label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          class="block"
+          max="1000"
+          min="100"
+        />
+      </fieldset>
+      <fieldset class="caja">
+        <label for="dropdown" class="block">Interes</label>
+        <select name="dropdown" id="dropdown">
+          <option value="arriendo">Arriendo</option>
+          <option value="venta">Venta</option>
+          <option value="arriendo/venta">Arriendo/Venta</option>
+          <option value="avaluos">Avaluos</option>
+        </select>
+      </fieldset>
+      <fieldset class="caja">
+        <legend class="sub-tittles">Destinacion</legend>
+        <input
+          type="radio"
+          name="destination"
+          id="vivienda"
+          class="block radio"
+        />
+        <label for="vivienda" class="block">Vivienda</label>
+        <input
+          type="radio"
+          name="destination"
+          id="comercial"
+          class="block radio"
+        />
+        <label for="comercial" class="block">Comercial</label>
+        <input
+          type="radio"
+          name="destination"
+          id="inversion"
+          class="block radio"
+        />
+        <label for="inversion" class="block">Inversion</label>
+      </fieldset>
+      <fieldset class="caja">
+        <legend class="sub-tittles">Gusto para elegir un inmueble</legend>
+        <input
+          type="checkbox"
+          name=""
+          id="security"
+          class="block checkbox"
+          value="security"
+        />
+        <label for="security" class="block">Seguridad</label>
+        <input
+          type="checkbox"
+          name=""
+          id="price"
+          class="block checkbox"
+          value="price"
+        />
+        <label for="price" class="block">Precio</label>
+        <input
+          type="checkbox"
+          name=""
+          id="site"
+          class="block checkbox"
+          value="site"
+        />
+        <label for="site" class="block">Lugar</label>
+      </fieldset>
+      <fieldset class="caja">
+        <label for="coment" class="block"
+          >Comentanos otro gusto que tengas..</label
+        >
+        <textarea name="coment" id="coment" class="text"></textarea>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
